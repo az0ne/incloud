@@ -37,7 +37,6 @@ jobs:
           go get -v github.com/projectdiscovery/naabu/v2/cmd/naabu
           go get -v github.com/projectdiscovery/httpx/cmd/httpx
           go get -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei
-          go get -v github.com/projectdiscovery/mapcidr/cmd/mapcidr
           
         shell: bash
 
