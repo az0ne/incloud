@@ -37,12 +37,14 @@ jobs:
           go get -v github.com/projectdiscovery/naabu/v2/cmd/naabu
           go get -v github.com/projectdiscovery/httpx/cmd/httpx
           go get -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei
+          go get -v github.com/projectdiscovery/mapcidr/cmd/mapcidr
         shell: bash
 
 
       - name: Running naabu to check top all ports
         run: |
-          naabu -iL input/target.txt  -rate 10000 -top-ports 1000 | tee output/active_ports.txt
+          mapcidr -l input/target.txt -silent > cidr.txt
+          naabu -iL input/cidr.txt -rate 10000 -top-ports 1000 | tee output/active_ports.txt
         shell: bash
 
 
