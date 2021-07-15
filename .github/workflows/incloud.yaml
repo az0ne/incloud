@@ -43,8 +43,7 @@ jobs:
 
       - name: Running naabu to check top all ports
         run: |
-          mapcidr -l input/target.txt -silent > input/cidr.txt
-          naabu -iL input/cidr.txt  -rate 10000 -top-ports 1000 | tee output/active_ports.txt
+          naabu -iL input/target.txt  -rate 10000 -p - | tee output/active_ports.txt
         shell: bash
 
 
