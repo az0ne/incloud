@@ -28,6 +28,7 @@ jobs:
           key: ${{ runner.os }}-go
 
       - name: Setting up ProjectDiscovery tools
+        if: steps.cache-go.outputs.cache-hit != 'true'
         env:
           GO111MODULE: on
         run: |
