@@ -40,10 +40,19 @@ jobs:
         shell: bash
 
 
-      - name: Running naabu to check top all ports
+      - name: Running SubFinder for passive DNS enumeration
         run: |
-          mapcidr -l input/target.txt -silent > input/cidr.txt
-          naabu -iL input/cidr.txt  -rate 10000 -top-ports 1000 | tee output/active_ports.txt
+          subfinder -dL input/domains.txt -config config/subfinder-config.yaml -o output/passive_subdomains.txt
+        shell: bash
+
+      - name: Running dnsx for valid DNS filtering 
+        run: |
+          dnsx -l output/passive_subdomains.txt -t 50 | tee output/active_subdomains.txt
+        shell: bash
+
+      - name: Running naabu to check top 1000 ports
+        run: |
+          naabu -iL output/active_subdomains.txt  -rate 10000 -top-ports 1000 | tee output/active_ports.txt
         shell: bash
 
 
@@ -51,6 +60,18 @@ jobs:
         run: |
           httpx -l output/active_ports.txt -title
           httpx -l output/active_ports.txt | tee output/active_urls.txt
+        shell: bash
+
+      - name: Downloading Nuclei Templates
+        run: |
+          nuclei -update-templates
+        shell: bash
+
+
+
+      - name: Running Nuclei for vulnerability assessment
+        run: |
+          nuclei -t cves/ -l output/active_urls.txt -bs 100 -c 50 -rl 300 -nc | tee output/nuclei_output.txt
         shell: bash
 
       - name: Sorting the output results
