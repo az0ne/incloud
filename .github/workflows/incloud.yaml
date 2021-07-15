@@ -57,7 +57,7 @@ jobs:
         run: |
           wget https://github.com/maurosoria/dirsearch/archive/refs/tags/v0.4.2-beta1.zip
           unzip v0.4.2-beta1.zip
-          cd v0.4.2-beta1
+          cd dirsearch-0.4.2-beta1
           python3 dirsearch.py -l output/active_urls.txt -e php,jsp,asp -i 200 -t 50 --full-url
 
       - name: Sorting the output results
