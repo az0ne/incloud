@@ -65,7 +65,7 @@ jobs:
         run: |
           git config --local user.email "1060708998@qq.com"
           git config --global user.name "az0ne"
-          git commit -m "PD-Actions report" -a --allow-empty
+          git commit -m "InCloud Report" -a --allow-empty
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
