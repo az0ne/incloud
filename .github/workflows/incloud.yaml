@@ -1,9 +1,6 @@
-name: pd-actions
+name: incloud
 
 on:
-#    schedule:
-#      - cron: '0 0 * * *'
-# Remove both comments to run this action on daily basis.
     workflow_dispatch:
 
 jobs:
@@ -19,7 +16,7 @@ jobs:
           go-version: 1.14
 
       - name: Setup Dependencies
-        run: sudo apt-get install libpcap-dev # Required for Naabu
+        run: sudo apt-get install libpcap-dev 
            
         
 
@@ -40,28 +37,20 @@ jobs:
           go get -v github.com/projectdiscovery/naabu/v2/cmd/naabu
           go get -v github.com/projectdiscovery/httpx/cmd/httpx
           go get -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei
-#           go get -v github.com/projectdiscovery/notify/cmd/notify
         shell: bash
 
 
       - name: Running naabu to check top all ports
         run: |
-          naabu -iL input/dlip.txt  -rate 10000 -p - | tee output/active_ports.txt
+          naabu -iL input/target.txt  -rate 10000 -p - | tee output/active_ports.txt
         shell: bash
 
-#      For running vulnerability assessment of cloud assets.
-#      - name: Enumerating hosts from Cloud with Cloudlist
-#        run: |
-#          cloudlist -config config/cloudlist-config.yaml -ip | tee output/cloud_hosts.txt >> output/active_ports.txt
-#        shell: bash
 
       - name: Running httpx for HTTP webservers probbing
         run: |
           httpx -l output/active_ports.txt -title
           httpx -l output/active_ports.txt | tee output/active_urls.txt
         shell: bash
-#     For posting results to slack/discord/telegram
-#          notify -slack -slack-webhook-url ${{ secrets.SLACK_WEBHOOK }} -slack-username notify
 
       - name: Sorting the output results
         run: |
