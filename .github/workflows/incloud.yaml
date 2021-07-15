@@ -16,7 +16,7 @@ jobs:
           go-version: 1.14
 
       - name: Setup Dependencies
-        run: sudo apt-get install libpcap-dev 
+        run: sudo apt-get install libpcap-dev git
            
         
 
@@ -52,6 +52,12 @@ jobs:
           httpx -l output/active_ports.txt -title
           httpx -l output/active_ports.txt | tee output/active_urls.txt
         shell: bash
+        
+      - name: Running dirsearch 
+        run: |
+          git clone https://github.com/maurosoria/dirsearch.git
+          cd dirsearch
+          python3 dirsearch.py -l output/active_urls.txt -e php,jsp,asp -i 200 -t 50 --full-url
 
       - name: Sorting the output results
         run: |
