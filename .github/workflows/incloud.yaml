@@ -61,10 +61,12 @@ jobs:
           httpx -l output/active_ports.txt -title
           httpx -l output/active_ports.txt | tee output/active_urls.txt
         shell: bash
-      - name: Running dirsearch 
+      - name: Running dirscan 
         run: |
-          pip3 install dirsearch
-          for i in $(cat output/active_urls.txt); do dirsearch -e php,jsp,asp -i 200 -t 50 --exclude-sizes=120B --full-url -q -u $i >> output/dir_urls.txt  ;done
+          wget https://raw.githubusercontent.com/maurosoria/dirsearch/master/db/dicc.txt
+          cp input/dirble dirscan
+          chmod +x dirscan
+          for i in $(cat output/active_urls.txt); do ./dirscan -w dicc.txt --url $i | grep "CODE:200" | tee output/dir_urls.txt;done
         shell: bash
       
 
