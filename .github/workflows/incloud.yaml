@@ -50,7 +50,7 @@ jobs:
       - name: Running httpx for HTTP webservers probbing
         run: |
           httpx -l output/active_ports.txt -title
-          httpx -l output/active_ports.txt | tee output/active_urls.txt
+          httpx -l output/active_ports.txt > output/active_urls.txt
         shell: bash
         
       - name: Running dirsearch 
