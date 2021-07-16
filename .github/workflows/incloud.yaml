@@ -57,6 +57,7 @@ jobs:
         run: |
           pip3 install dirsearch
           dirsearch -l output/active_urls.txt -e php,jsp,asp -i 200 -t 50 --full-url -o output/dir_urls.txt
+        shell: bash
 #          cp input/dirble dirscan
 #          chmod +x dirscan
 #          for i in $(cat output/active_urls.txt); do ./dirscan -w input/robots.txt --url $i | grep "CODE:200" | tee output/dir_urls.txt;done
