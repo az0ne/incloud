@@ -60,9 +60,7 @@ jobs:
           chmod +x dirscan
           for i in $(cat output/active_urls.txt); do ./dirscan -w dicc.txt --url $i | grep "CODE:200" | tee output/dir_urls.txt;done
         shell: bash
-#          pip3 install dirsearch
-#          for i in $(cat output/active_urls.txt); do dirsearch -e php,jsp,asp -i 200 -t 50 --exclude-sizes=120B --full-url -q -u $i >> output/dir_urls.txt  ;done
-          
+
       - name: Sorting the output results
         run: |
           find output -type f -exec sort {} -o {} \;
