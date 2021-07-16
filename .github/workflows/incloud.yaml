@@ -56,7 +56,8 @@ jobs:
       - name: Running dirsearch 
         run: |
           pip3 install dirsearch
-          dirsearch -l output/active_urls.txt -e php,jsp,asp -i 200 -t 50 --exclude-sizes=120B --full-url -o output/dir_urls.txt -q
+          for i in $(cat output/active_urls.txt); do dirsearch -e php,jsp,asp -i 200 -t 50 --exclude-sizes=120B --full-url -q -u $i >> output/dir_urls.txt  ;done
+          
         shell: bash
 #          cp input/dirble dirscan
 #          chmod +x dirscan
