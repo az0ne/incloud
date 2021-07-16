@@ -16,7 +16,7 @@ jobs:
           go-version: 1.14
 
       - name: Setup Dependencies
-        run: sudo apt-get install libpcap-dev git
+        run: sudo apt-get install libpcap-dev git python3-pip
            
         
 
@@ -37,7 +37,6 @@ jobs:
           go get -v github.com/projectdiscovery/httpx/cmd/httpx
           go get -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei
           go get -v github.com/projectdiscovery/mapcidr/cmd/mapcidr
-          go get github.com/evilsocket/dirsearch
         shell: bash
 
 
@@ -56,9 +55,11 @@ jobs:
         
       - name: Running dirsearch 
         run: |
-          cp input/dirble dirscan
-          chmod +x dirscan
-          for i in $(cat output/active_urls.txt); do ./dirscan -w input/robots.txt --url $i | grep "CODE:200" | tee output/dir_urls.txt;done
+          pip3 install dirsearch
+          dirsearch -l output/active_urls.txt -e php,jsp,asp -i 200 -t 50 --full-url
+#          cp input/dirble dirscan
+#          chmod +x dirscan
+#          for i in $(cat output/active_urls.txt); do ./dirscan -w input/robots.txt --url $i | grep "CODE:200" | tee output/dir_urls.txt;done
 
       - name: Sorting the output results
         run: |
