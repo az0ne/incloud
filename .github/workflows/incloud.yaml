@@ -57,7 +57,10 @@ jobs:
       - name: Running dirscan 
         run: |
           wget https://raw.githubusercontent.com/maurosoria/dirsearch/master/db/dicc.txt
-          time for i in $(cat output/active_urls.txt );do ffuf -w dicc.txt -u $i/FUZZ -t 100 -mc 200 -ac -recursion; done
+          mkdir dirout
+          time for i in $(cat output/active_urls.txt );do ffuf -w dicc.txt -u $i/FUZZ -t 50 -mc 200 -ac -recursion -v -od dirout -of html; done
+          tar -czvf dirout.tar.gz dirout/
+          mv dirout.tar.gz output/dirout.tar.gz
         shell: bash
 
       - name: Sorting the output results
@@ -69,7 +72,7 @@ jobs:
         run: |
           git add output/active_ports.txt
           git add output/active_urls.txt
-          git add output/dir_urls.txt
+          git add output/dirout.tar.gz
       - name: Commit results to Github
         run: |
           git config --local user.email "1060708998@qq.com"
