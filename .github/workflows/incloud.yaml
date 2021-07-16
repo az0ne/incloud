@@ -61,14 +61,10 @@ jobs:
           httpx -l output/active_ports.txt -title
           httpx -l output/active_ports.txt | tee output/active_urls.txt
         shell: bash
-      - name: Xray scan urls
+      - name: Running dirsearch 
         run: |
-          wget https://github.com/chaitin/xray/releases/download/1.7.1/xray_linux_amd64.zip
-          unzip xray_linux_amd64.zip
-          mv xray_linux_amd64 xray
-          for i in $(cat output/active_urls.txt ); do ./xray webscan --basic-crawler $i --html-output output/`date +%Y%m%d%H%M%S`.html;done
-          tar -czvf xraylog.tar.gz output/
-          mv xraylog.tar.gz output/xraylog.tar.gz
+          pip3 install dirsearch
+          dirsearch -l output/active_urls.txt -e php,jsp,asp -i 200 -t 50 --full-url -o output/dir_urls.txt
         shell: bash
       
 
@@ -81,7 +77,7 @@ jobs:
         run: |
           git add output/active_ports.txt
           git add output/active_urls.txt
-          git add output/xraylog.tar.gz
+          git add output/dir_urls.txt
       - name: Commit results to Github
         run: |
           git config --local user.email "1060708998@qq.com"
