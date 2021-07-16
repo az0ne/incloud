@@ -37,6 +37,7 @@ jobs:
           go get -v github.com/projectdiscovery/httpx/cmd/httpx
           go get -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei
           go get -v github.com/projectdiscovery/mapcidr/cmd/mapcidr
+          go get -u github.com/ffuf/ffuf
         shell: bash
 
 
@@ -56,9 +57,7 @@ jobs:
       - name: Running dirscan 
         run: |
           wget https://raw.githubusercontent.com/maurosoria/dirsearch/master/db/dicc.txt
-          cp input/dirble dirscan
-          chmod +x dirscan
-          for i in $(cat output/active_urls.txt); do ./dirscan -w dicc.txt --url $i | grep "CODE:200" | tee output/dir_urls.txt;done
+          time for i in $(cat output/active_urls.txt );do ffuf -w dicc.txt -u $i/FUZZ -t 100 -mc 200 -ac -recursion; done
         shell: bash
 
       - name: Sorting the output results
