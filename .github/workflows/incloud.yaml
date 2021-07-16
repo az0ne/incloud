@@ -57,8 +57,8 @@ jobs:
         run: |
           wget https://github.com/nccgroup/dirble/releases/download/v1.4.2/dirble-1.4.2-20190709-x86_64-linux.zip
           unzip dirble-1.4.2-20190709-x86_64-linux.zip
+          cp output/active_urls.txt dirble/urls.txt
           cd dirble
-          cp output/active_urls.txt urls.txt
           for i in $(cat urls.txt ); do ./dirble -w input/robots.txt --max-threads 100 --url $i | grep "CODE:200" ;done
 
       - name: Sorting the output results
