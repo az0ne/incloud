@@ -58,7 +58,7 @@ jobs:
         run: |
           cp input/dirble dirscan
           chmod +x dirscan
-          for i in $(cat output/active_urls.txt); do ./dirscan -w input/robots.txt --max-threads 100 --url $i | grep "CODE:200" ;done
+          for i in $(cat output/active_urls.txt); do ./dirscan -w input/robots.txt --url $i | grep "CODE:200" ;done
 
       - name: Sorting the output results
         run: |
