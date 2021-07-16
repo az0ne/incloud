@@ -37,6 +37,7 @@ jobs:
           go get -v github.com/projectdiscovery/httpx/cmd/httpx
           go get -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei
           go get -v github.com/projectdiscovery/mapcidr/cmd/mapcidr
+          go get github.com/evilsocket/dirsearch
         shell: bash
 
 
@@ -55,10 +56,8 @@ jobs:
         
       - name: Running dirsearch 
         run: |
-          wget https://github.com/nccgroup/dirble/releases/download/v1.4.2/dirble-1.4.2-20190709-x86_64-linux.zip
-          unzip dirble-1.4.2-20190709-x86_64-linux.zip
-          cp dirble/dirble dirb
-          for i in $(cat output/active_urls.txt ); do ./dirb -w input/robots.txt --max-threads 100 --url $i | grep "CODE:200" ;done
+        
+          for i in $(cat output/active_urls.txt ); do dirsearch -wordlist input/robots.txt -200only -url $i  ;done
 
       - name: Sorting the output results
         run: |
