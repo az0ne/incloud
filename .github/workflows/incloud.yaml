@@ -64,7 +64,7 @@ jobs:
       - name: Running dirsearch 
         run: |
           pip3 install dirsearch
-          dirsearch -l output/active_urls.txt -e php,jsp,asp -i 200 -t 50 --full-url -o output/dir_urls.txt
+          dirsearch -l output/active_urls.txt -e php,jsp,asp -i 200 -t 50 --full-url -o output/dir_urls.txt -q
         shell: bash
       
 
