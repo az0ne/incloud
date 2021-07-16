@@ -56,8 +56,8 @@ jobs:
         
       - name: Running dirsearch 
         run: |
-        
-          for i in $(cat output/active_urls.txt ); do dirsearch -wordlist input/robots.txt -200only -url $i  ;done
+          cp input/dirble dirscan
+          for i in $(cat output/active_urls.txt); do ./dirscan -w input/robots.txt --max-threads 100 --url $i | grep "CODE:200" ;done
 
       - name: Sorting the output results
         run: |
