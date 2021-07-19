@@ -18,7 +18,13 @@
 * 2.修改流程文件里的  git config --local user.email  与   git config --global user.name  改成自己的邮箱与自己的ID（用于报告输出）
 * 3.修改input目录的扫描目标，使用action标签进行在线编译，操作如下：
 
-
+## References
+https://github.com/chaitin/xray
+https://github.com/ffuf/ffuf
+https://github.com/projectdiscovery/nuclei
+https://github.com/projectdiscovery/naabu
+https://github.com/projectdiscovery/nuclei
+https://github.com/projectdiscovery/subfinder
 
 **官网：**
 https://www.inbug.org
