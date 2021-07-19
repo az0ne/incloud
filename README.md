@@ -14,3 +14,8 @@
 * SubDomain-Portscan-Vulnscan 对域名进行子域名枚举与接口查询，对查询的子域名进行Top1000端口扫描，输出可用Web服务标题，对Web服务进行Nuclei漏洞扫描。
 * SubDomain-Portscan-Xray 对域名进行子域名枚举与接口查询，对查询的子域名进行Top1000端口扫描，输出可用Web服务标题，对Web服务进行Xray爬虫爬取与漏洞扫描。
 * SubDomain-Portscan-Dirscan 对域名进行子域名枚举与接口查询，对查询的子域名进行Top1000端口扫描，输出可用Web服务标题，对Web服务进行Ffuf目录递归扫描。
+
+## 使用方法
+1.将项目fork到自己的github.
+2.修改流程文件里的  git config --local user.email  与   git config --global user.name  改成自己的邮箱与自己的ID（用于报告输出）
+3.使用
