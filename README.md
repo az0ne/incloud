@@ -23,7 +23,6 @@
 * https://github.com/ffuf/ffuf
 * https://github.com/projectdiscovery/nuclei
 * https://github.com/projectdiscovery/naabu
-* https://github.com/projectdiscovery/nuclei
 * https://github.com/projectdiscovery/subfinder
 
 **官网：**
