@@ -19,12 +19,12 @@
 * 3.修改input目录的扫描目标，使用action标签进行在线编译，操作如下：
 
 ## References
-https://github.com/chaitin/xray
-https://github.com/ffuf/ffuf
-https://github.com/projectdiscovery/nuclei
-https://github.com/projectdiscovery/naabu
-https://github.com/projectdiscovery/nuclei
-https://github.com/projectdiscovery/subfinder
+* https://github.com/chaitin/xray
+* https://github.com/ffuf/ffuf
+* https://github.com/projectdiscovery/nuclei
+* https://github.com/projectdiscovery/naabu
+* https://github.com/projectdiscovery/nuclei
+* https://github.com/projectdiscovery/subfinder
 
 **官网：**
 https://www.inbug.org
