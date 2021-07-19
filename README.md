@@ -17,3 +17,10 @@
 * 1.将项目fork到自己的github.
 * 2.修改流程文件里的  git config --local user.email  与   git config --global user.name  改成自己的邮箱与自己的ID（用于报告输出）
 * 3.使用
+
+
+**官网：**
+https://www.inbug.org
+
+同时也可通过公众号联系：
+![-w784](InBug.png)
