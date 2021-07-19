@@ -1,5 +1,5 @@
 # InCloud GitHub云上扫描器
-<div align=center>![-w784](yun.png)
+![-w784](yun.png)
 ## 简介
 本工具只可用于安全测试，勿用于非法用途！
 ### 工具定位
