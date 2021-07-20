@@ -16,7 +16,7 @@ jobs:
           go-version: 1.14
 
       - name: Setup Dependencies
-        run: sudo apt-get install libpcap-dev 
+        run: sudo apt-get install libpcap-dev rar
            
         
 
@@ -58,8 +58,8 @@ jobs:
           unzip xray_linux_amd64.zip
           mv xray_linux_amd64 xray
           set +e ;for i in $(cat output/active_urls.txt ); do ./xray webscan --basic-crawler $i --html-output output/`date +%Y%m%d%H%M%S`.html;done
-          tar -czvf xraylog.tar.gz output/
-          mv xraylog.tar.gz output/xraylog.tar.gz
+          rar a xraylog.rar output/
+          mv xraylog.rar output/xraylog.rar
         shell: bash
         
       - name: Running dirscan 
@@ -67,8 +67,8 @@ jobs:
           wget https://raw.githubusercontent.com/maurosoria/dirsearch/master/db/dicc.txt
           mkdir dirout
           set +e ;time for i in $(cat output/active_urls.txt );do ffuf -w dicc.txt -u $i/FUZZ -t 500 -mc 200 -ac -recursion -v -of html -o dirout/`date +%Y%m%d%H%M%S`.html; done
-          tar -czvf dirout.tar.gz dirout/
-          mv dirout.tar.gz output/dirout.tar.gz
+          rar a dirout.rar dirout
+          mv dirout.rar output/dirout.rar
         shell: bash
 
         
@@ -81,8 +81,8 @@ jobs:
         run: |
           git add output/active_ports.txt
           git add output/active_urls.txt
-          git add output/xraylog.tar.gz
-          git add output/dirout.tar.gz
+          git add output/xraylog.rar
+          git add output/dirout.rar
       - name: Commit results to Github
         run: |
           git config --local user.email "1060708998@qq.com"
