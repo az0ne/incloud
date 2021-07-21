@@ -65,20 +65,11 @@ jobs:
       - name: Running dirscan 
         run: |
           wget https://raw.githubusercontent.com/maurosoria/dirsearch/master/db/dicc.txt
-          pip3 install dirsearch
-          set +e; time for i in $(cat output/active_urls.txt );do dirsearch -u $i -e php,jsp,asp -i 200 --full-url -q | awk '{print $5}' >> dirout.txt |tail -f dirout.txt ; done
-          mv dirout.txt output/dirout.txt
+          mkdir dirout
+          set +e ;time for i in $(cat output/active_urls.txt );do ffuf -w dicc.txt -u $i/FUZZ -t 200 -mc 200 -ac -recursion -v -of csv -o dirout/`date +%Y%m%d%H%M%S`.csv; done
+          cat dirout/*.csv >> output/out.csv
+          mv dirout.tar.gz output/dirout.tar.gz
         shell: bash
-      
-      - name: Runing Webcrack
-        run: |
-          wget https://github.com/yzddmr6/WebCrack/archive/refs/heads/master.zip
-          unzip master.zip
-          cd WebCrack-master
-          pip3 install -r requirements.txt
-          cat ../output/dirout.txt | egrep  "admin|login" > url.txt
-          echo url.txt | python3 webcrack.py >> webcrack.txt
-          cp webcrack.txt ../output/webcrack.txt
           
 
       - name: Sorting the output results
