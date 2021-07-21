@@ -81,7 +81,7 @@ jobs:
           git add output/active_ports.txt
           git add output/active_urls.txt
           git add output/xraylog.rar
-          git add output/dirout.html
+          git add output/dirout.txt
       - name: Commit results to Github
         run: |
           git config --local user.email "1060708998@qq.com"
