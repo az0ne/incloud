@@ -81,8 +81,7 @@ jobs:
         run: |
           git add output/active_ports.txt
           git add output/active_urls.txt
-          git add output/dirout.txt
-          git add output/webcrack.txt
+          git add output/out.csv
       - name: Commit results to Github
         run: |
           git config --local user.email "1060708998@qq.com"
