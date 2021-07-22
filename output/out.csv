@@ -1,0 +1,31 @@
+%2e%2e//google.com,http://demo.aisec.cn/%2e%2e//google.com,,4,200,15,2,1,text/html; charset=UTF-8,
+%2e%2e//google.com,http://www.aisec.cn/%2e%2e//google.com,,4,200,15,2,1,text/html; charset=UTF-8,
+%2e%2e//google.com,https://demo.aisec.cn/%2e%2e//google.com,,4,200,15,2,1,text/html; charset=UTF-8,
+%2e%2e//google.com,https://www.aisec.cn/%2e%2e//google.com,,4,200,15,2,1,text/html; charset=UTF-8,
+83,http://www.aisec.cn/temp/83,,1574,200,13504,126,15,text/plain,
+FUZZ,url,redirectlocation,position,status_code,content_length,content_words,content_lines,content_type,resultfile
+FUZZ,url,redirectlocation,position,status_code,content_length,content_words,content_lines,content_type,resultfile
+FUZZ,url,redirectlocation,position,status_code,content_length,content_words,content_lines,content_type,resultfile
+FUZZ,url,redirectlocation,position,status_code,content_length,content_words,content_lines,content_type,resultfile
+FUZZ,url,redirectlocation,position,status_code,content_length,content_words,content_lines,content_type,resultfile
+all/,http://www.aisec.cn/update/all/,,3538,200,4020,199,122,text/html,
+index.php,http://demo.aisec.cn/index.php,,5857,200,4037,185,131,text/html,
+index.php,http://www.aisec.cn/400/index.php,,5857,200,0,1,1,text/html,
+index.php,http://www.aisec.cn/f/index.php,,5857,200,0,1,1,text/html,
+index.php,http://www.aisec.cn/index.php,,5857,200,250,7,1,text/html; charset=utf-8,
+index.php,http://www.aisec.cn/n/index.php,,5857,200,230,5,3,text/html,
+index.php,http://www.aisec.cn/n/more/index.php,,5857,200,205,5,3,text/html,
+index.php,http://www.aisec.cn/update/all/index.php,,5857,200,4020,199,122,text/html,
+index.php,http://www.aisec.cn/update/index.php,,5857,200,95,2,1,text/html; charset=utf-8,
+index.php,https://www.aisec.cn/index.php,,5857,200,250,7,1,text/html; charset=utf-8,
+index.php/login/,http://www.aisec.cn/400/index.php/login/,,5860,200,0,1,1,text/html,
+index.php/login/,http://www.aisec.cn/f/index.php/login/,,5860,200,0,1,1,text/html,
+index.php/login/,http://www.aisec.cn/index.php/login/,,5860,200,250,7,1,text/html; charset=utf-8,
+index.php/login/,http://www.aisec.cn/n/index.php/login/,,5860,200,230,5,3,text/html,
+index.php/login/,http://www.aisec.cn/n/more/index.php/login/,,5860,200,205,5,3,text/html,
+index.php/login/,http://www.aisec.cn/update/all/index.php/login/,,5860,200,4020,199,122,text/html,
+index.php/login/,http://www.aisec.cn/update/index.php/login/,,5860,200,95,2,1,text/html; charset=utf-8,
+index.php/login/,https://www.aisec.cn/index.php/login/,,5860,200,250,7,1,text/html; charset=utf-8,
+nginx.conf,http://www.aisec.cn/in/nginx.conf,,6906,200,4850,906,156,text/plain,
+test.txt,http://www.aisec.cn/in/test.txt,,8732,200,7,1,1,text/plain,
+web/,http://www.aisec.cn/update/web/,,9378,200,9,2,1,text/plain,
