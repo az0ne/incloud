@@ -68,7 +68,7 @@ jobs:
           mkdir dirout
           set +e ;time for i in $(cat output/active_urls.txt );do ffuf -w dicc.txt -u $i/FUZZ -t 200 -mc 200 -ac -recursion -v -of csv -o dirout/`date +%Y%m%d%H%M%S`.csv; done
           cat dirout/*.csv >> output/out.csv
-          mv dirout.tar.gz output/dirout.tar.gz
+
         shell: bash
           
 
