@@ -1,6 +1,5 @@
-http://demo.aisec.cn
-http://demo.aisec.cn:81
-http://www.aisec.cn
-http://www.aisec.cn:81
-https://demo.aisec.cn
-https://www.aisec.cn
+http://hnzf.aykj.net.cn
+http://kmwxcs.aykj.net.cn
+http://songzanlinsi.aykj.net.cn
+http://www.aykj.net.cn
+http://wwwaykjnet.aykj.net.cn

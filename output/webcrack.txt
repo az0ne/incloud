@@ -1,0 +1,132 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
++---------------------------------------------------+
++---------------------------------------------------+
+2021-07-22 06:40:37  id: 1 [*] Start: http://hnzf.aykj.net.cn/.bak_0.log
+2021-07-22 06:40:48  id: 1 [-] http://hnzf.aykj.net.cn/.bak_0.log Parse Error: HTTPConnectionPool(host='hnzf.aykj.net.cn', port=80): Max retries exceeded with url: /.bak_0.log (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7fde3214bb80>, 'Connection to hnzf.aykj.net.cn timed out. (connect timeout=10)'))
+2021-07-22 06:40:48  id: 2 [*] Start: http://hnzf.aykj.net.cn/.badsegment.log
+2021-07-22 06:40:58  id: 2 [-] http://hnzf.aykj.net.cn/.badsegment.log Parse Error: HTTPConnectionPool(host='hnzf.aykj.net.cn', port=80): Max retries exceeded with url: /.badsegment.log (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7fde320c0610>, 'Connection to hnzf.aykj.net.cn timed out. (connect timeout=10)'))
+2021-07-22 06:40:58  id: 3 [*] Start: http://hnzf.aykj.net.cn/.cc-ban.txt.bak
+2021-07-22 06:41:08  id: 3 [-] http://hnzf.aykj.net.cn/.cc-ban.txt.bak Parse Error: HTTPConnectionPool(host='hnzf.aykj.net.cn', port=80): Max retries exceeded with url: /.cc-ban.txt.bak (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7fde320c0ee0>, 'Connection to hnzf.aykj.net.cn timed out. (connect timeout=10)'))
+2021-07-22 06:41:08  id: 4 [*] Start: http://hnzf.aykj.net.cn/.bak
+2021-07-22 06:41:18  id: 4 [-] http://hnzf.aykj.net.cn/.bak Parse Error: HTTPConnectionPool(host='hnzf.aykj.net.cn', port=80): Max retries exceeded with url: /.bak (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7fde320cb790>, 'Connection to hnzf.aykj.net.cn timed out. (connect timeout=10)'))
+2021-07-22 06:41:18  id: 5 [*] Start: http://hnzf.aykj.net.cn/.badarg.log
+2021-07-22 06:41:28  id: 5 [-] http://hnzf.aykj.net.cn/.badarg.log Parse Error: HTTPConnectionPool(host='hnzf.aykj.net.cn', port=80): Max retries exceeded with url: /.badarg.log (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7fde320d4070>, 'Connection to hnzf.aykj.net.cn timed out. (connect timeout=10)'))
+2021-07-22 06:41:28  id: 6 [*] Start: http://hnzf.aykj.net.cn/.config/gcloud/access_tokens.db
+2021-07-22 06:41:38  id: 6 [-] http://hnzf.aykj.net.cn/.config/gcloud/access_tokens.db Parse Error: HTTPConnectionPool(host='hnzf.aykj.net.cn', port=80): Max retries exceeded with url: /.config/gcloud/access_tokens.db (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7fde320cb5e0>, 'Connection to hnzf.aykj.net.cn timed out. (connect timeout=10)'))
+2021-07-22 06:41:38  id: 7 [*] Start: http://hnzf.aykj.net.cn/.config/gcloud/credentials.db
+2021-07-22 06:41:48  id: 7 [-] http://hnzf.aykj.net.cn/.config/gcloud/credentials.db Parse Error: HTTPConnectionPool(host='hnzf.aykj.net.cn', port=80): Max retries exceeded with url: /.config/gcloud/credentials.db (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7fde320c0d60>, 'Connection to hnzf.aykj.net.cn timed out. (connect timeout=10)'))
+2021-07-22 06:41:48  id: 8 [*] Start: http://hnzf.aykj.net.cn/.crc
+2021-07-22 06:41:58  id: 8 [-] http://hnzf.aykj.net.cn/.crc Parse Error: HTTPConnectionPool(host='hnzf.aykj.net.cn', port=80): Max retries exceeded with url: /.crc (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7fde320c0430>, 'Connection to hnzf.aykj.net.cn timed out. (connect timeout=10)'))
+2021-07-22 06:41:58  id: 9 [*] Start: http://hnzf.aykj.net.cn/.CVS
+2021-07-22 06:42:08  id: 10 [*] Start: http://hnzf.aykj.net.cn/.cvsignore
+2021-07-22 06:42:08  id: 9 [-] http://hnzf.aykj.net.cn/.CVS Parse Error: HTTPConnectionPool(host='hnzf.aykj.net.cn', port=80): Max retries exceeded with url: /.CVS (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7fde32aefdf0>, 'Connection to hnzf.aykj.net.cn timed out. (connect timeout=10)'))
+2021-07-22 06:42:18  id: 10 [-] http://hnzf.aykj.net.cn/.cvsignore Parse Error: HTTPConnectionPool(host='hnzf.aykj.net.cn', port=80): Max retries exceeded with url: /.cvsignore (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7fde3214bb50>, 'Connection to hnzf.aykj.net.cn timed out. (connect timeout=10)'))
+2021-07-22 06:42:18  id: 11 [*] Start: http://hnzf.aykj.net.cn/.dat
+2021-07-22 06:42:28  id: 11 [-] http://hnzf.aykj.net.cn/.dat Parse Error: HTTPConnectionPool(host='hnzf.aykj.net.cn', port=80): Max retries exceeded with url: /.dat (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7fde320d4a30>, 'Connection to hnzf.aykj.net.cn timed out. (connect timeout=10)'))
+2021-07-22 06:42:28  id: 12 [*] Start: http://hnzf.aykj.net.cn/.dart_tool/
+2021-07-22 06:42:38  id: 12 [-] http://hnzf.aykj.net.cn/.dart_tool/ Parse Error: HTTPConnectionPool(host='hnzf.aykj.net.cn', port=80): Max retries exceeded with url: /.dart_tool/ (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7fde320e02e0>, 'Connection to hnzf.aykj.net.cn timed out. (connect timeout=10)'))
+2021-07-22 06:42:38  id: 13 [*] Start: http://hnzf.aykj.net.cn/.data/
+2021-07-22 06:42:48  id: 13 [-] http://hnzf.aykj.net.cn/.data/ Parse Error: HTTPConnectionPool(host='hnzf.aykj.net.cn', port=80): Max retries exceeded with url: /.data/ (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7fde32aef070>, 'Connection to hnzf.aykj.net.cn timed out. (connect timeout=10)'))
+2021-07-22 06:42:48  id: 14 [*] Start: http://hnzf.aykj.net.cn/.db
+2021-07-22 06:42:58  id: 14 [-] http://hnzf.aykj.net.cn/.db Parse Error: HTTPConnectionPool(host='hnzf.aykj.net.cn', port=80): Max retries exceeded with url: /.db (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7fde320c0e20>, 'Connection to hnzf.aykj.net.cn timed out. (connect timeout=10)'))
+2021-07-22 06:42:58  id: 15 [*] Start: http://hnzf.aykj.net.cn/.db.yaml
+2021-07-22 06:43:09  id: 15 [-] http://hnzf.aykj.net.cn/.db.yaml Parse Error: HTTPConnectionPool(host='hnzf.aykj.net.cn', port=80): Max retries exceeded with url: /.db.yaml (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7fde320d4fd0>, 'Connection to hnzf.aykj.net.cn timed out. (connect timeout=10)'))
+2021-07-22 06:43:09  id: 16 [*] Start: http://hnzf.aykj.net.cn/.db3
+2021-07-22 06:43:19  id: 16 [-] http://hnzf.aykj.net.cn/.db3 Parse Error: HTTPConnectionPool(host='hnzf.aykj.net.cn', port=80): Max retries exceeded with url: /.db3 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7fde320d42b0>, 'Connection to hnzf.aykj.net.cn timed out. (connect timeout=10)'))
+2021-07-22 06:43:19  id: 17 [*] Start: http://hnzf.aykj.net.cn/.dbshell
+2021-07-22 06:43:29  id: 17 [-] http://hnzf.aykj.net.cn/.dbshell Parse Error: HTTPConnectionPool(host='hnzf.aykj.net.cn', port=80): Max retries exceeded with url: /.dbshell (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7fde320cbbb0>, 'Connection to hnzf.aykj.net.cn timed out. (connect timeout=10)'))
+2021-07-22 06:43:29  id: 18 [*] Start: http://hnzf.aykj.net.cn/.dbus/
+2021-07-22 06:43:39  id: 18 [-] http://hnzf.aykj.net.cn/.dbus/ Parse Error: HTTPConnectionPool(host='hnzf.aykj.net.cn', port=80): Max retries exceeded with url: /.dbus/ (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7fde320e0400>, 'Connection to hnzf.aykj.net.cn timed out. (connect timeout=10)'))
+2021-07-22 06:43:39  id: 19 [*] Start: http://hnzf.aykj.net.cn/.dep.inc
+2021-07-22 06:43:49  id: 19 [-] http://hnzf.aykj.net.cn/.dep.inc Parse Error: HTTPConnectionPool(host='hnzf.aykj.net.cn', port=80): Max retries exceeded with url: /.dep.inc (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7fde320cb970>, 'Connection to hnzf.aykj.net.cn timed out. (connect timeout=10)'))
+2021-07-22 06:43:49  id: 20 [*] Start: http://hnzf.aykj.net.cn/.depend
+2021-07-22 06:43:59  id: 20 [-] http://hnzf.aykj.net.cn/.depend Parse Error: HTTPConnectionPool(host='hnzf.aykj.net.cn', port=80): Max retries exceeded with url: /.depend (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7fde320cb3a0>, 'Connection to hnzf.aykj.net.cn timed out. (connect timeout=10)'))
+2021-07-22 06:43:59  id: 21 [*] Start: http://hnzf.aykj.net.cn/.deployignore
+2021-07-22 06:44:09  id: 21 [-] http://hnzf.aykj.net.cn/.deployignore Parse Error: HTTPConnectionPool(host='hnzf.aykj.net.cn', port=80): Max retries exceeded with url: /.deployignore (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7fde320d4730>, 'Connection to hnzf.aykj.net.cn timed out. (connect timeout=10)'))
+2021-07-22 06:44:09  id: 22 [*] Start: http://hnzf.aykj.net.cn/.deploy/values.yaml
+2021-07-22 06:44:19  id: 22 [-] http://hnzf.aykj.net.cn/.deploy/values.yaml Parse Error: HTTPConnectionPool(host='hnzf.aykj.net.cn', port=80): Max retries exceeded with url: /.deploy/values.yaml (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7fde320c0790>, 'Connection to hnzf.aykj.net.cn timed out. (connect timeout=10)'))
+2021-07-22 06:44:19  id: 23 [*] Start: http://hnzf.aykj.net.cn/.dependabot
+2021-07-22 06:44:29  id: 23 [-] http://hnzf.aykj.net.cn/.dependabot Parse Error: HTTPConnectionPool(host='hnzf.aykj.net.cn', port=80): Max retries exceeded with url: /.dependabot (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7fde320c0250>, 'Connection to hnzf.aykj.net.cn timed out. (connect timeout=10)'))
+2021-07-22 06:44:29  id: 24 [*] Start: http://hnzf.aykj.net.cn/.deployment-config.json
+2021-07-22 06:44:39  id: 24 [-] http://hnzf.aykj.net.cn/.deployment-config.json Parse Error: HTTPConnectionPool(host='hnzf.aykj.net.cn', port=80): Max retries exceeded with url: /.deployment-config.json (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7fde3214b910>, 'Connection to hnzf.aykj.net.cn timed out. (connect timeout=10)'))
+2021-07-22 06:44:39  id: 25 [*] Start: http://hnzf.aykj.net.cn/.deployment
+2021-07-22 06:44:49  id: 25 [-] http://hnzf.aykj.net.cn/.deployment Parse Error: HTTPConnectionPool(host='hnzf.aykj.net.cn', port=80): Max retries exceeded with url: /.deployment (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7fde320e0c40>, 'Connection to hnzf.aykj.net.cn timed out. (connect timeout=10)'))
+2021-07-22 06:44:49  id: 26 [*] Start: http://hnzf.aykj.net.cn/.dev/
+2021-07-22 06:44:56  id: 26 [-] http://hnzf.aykj.net.cn/.dev/ Parse Error: Can not get form
+2021-07-22 06:44:56  id: 27 [*] Start: http://hnzf.aykj.net.cn/.dir-locals.el
+2021-07-22 06:44:57  id: 27 [-] http://hnzf.aykj.net.cn/.dir-locals.el Parse Error: Can not get form
+2021-07-22 06:44:57  id: 28 [*] Start: http://hnzf.aykj.net.cn/.directory
+2021-07-22 06:44:57  id: 28 [-] http://hnzf.aykj.net.cn/.directory Parse Error: Can not get form
+2021-07-22 06:44:57  id: 29 [*] Start: http://hnzf.aykj.net.cn/.divzero.log
+2021-07-22 06:44:58  id: 29 [-] http://hnzf.aykj.net.cn/.divzero.log Parse Error: Can not get form
+2021-07-22 06:44:58  id: 30 [*] Start: http://hnzf.aykj.net.cn/.do
+2021-07-22 06:44:58  id: 30 [-] http://hnzf.aykj.net.cn/.do Parse Error: Can not get form
+2021-07-22 06:44:58  id: 31 [*] Start: http://hnzf.aykj.net.cn/.docker
+2021-07-22 06:44:59  id: 31 [-] http://hnzf.aykj.net.cn/.docker Parse Error: Can not get form
+2021-07-22 06:44:59  id: 32 [*] Start: http://hnzf.aykj.net.cn/.docker/.env
+2021-07-22 06:44:59  id: 32 [-] http://hnzf.aykj.net.cn/.docker/.env Parse Error: Can not get form
+2021-07-22 06:44:59  id: 33 [*] Start: http://hnzf.aykj.net.cn/.docker/
+2021-07-22 06:44:59  id: 33 [-] http://hnzf.aykj.net.cn/.docker/ Parse Error: Can not get form
+2021-07-22 06:44:59  id: 34 [*] Start: http://hnzf.aykj.net.cn/.docker/config.json
+2021-07-22 06:45:00  id: 34 [-] http://hnzf.aykj.net.cn/.docker/config.json Parse Error: Can not get form
+2021-07-22 06:45:00  id: 35 [*] Start: http://hnzf.aykj.net.cn/.docker/daemon.json
+2021-07-22 06:45:00  id: 35 [-] http://hnzf.aykj.net.cn/.docker/daemon.json Parse Error: Can not get form
+2021-07-22 06:45:00  id: 36 [*] Start: http://hnzf.aykj.net.cn/.docker/laravel/app/.env
+2021-07-22 06:45:00  id: 36 [-] http://hnzf.aykj.net.cn/.docker/laravel/app/.env Parse Error: Can not get form
+2021-07-22 06:45:00  id: 37 [*] Start: http://hnzf.aykj.net.cn/.dockercfg
+2021-07-22 06:45:01  id: 37 [-] http://hnzf.aykj.net.cn/.dockercfg Parse Error: Can not get form
+2021-07-22 06:45:01  id: 38 [*] Start: http://hnzf.aykj.net.cn/.dockerignore
+2021-07-22 06:45:01  id: 38 [-] http://hnzf.aykj.net.cn/.dockerignore Parse Error: Can not get form
+All processes done! Cost time: 0:04:23.757329
+File or Url:
+weburl.txt exists!
+|                                                   |
+|                  version: 2.1                     |
+|                 code by @yzddmr6                  |
+|     \/  \/ \___|_.__/ \_____|_|  \__,_|\___|_|\_\ |
+|    \  /\  /  __/ |_) | |____| | | (_| | (__|   <  |
+|   \ \/  \/ / _ \ '_ \| |    | '__/ _' |/ __| |/ / |
+|  \ \  /\  / /__| |__ | |     _ __ __ _  ___| | __ |
+| \ \        / / | |    / ____|              | |    |
+| __          __  _      _____                _     |
+总任务数: 38
