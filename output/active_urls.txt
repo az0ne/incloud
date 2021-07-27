@@ -1,5 +1,11 @@
-http://hnzf.aykj.net.cn
-http://kmwxcs.aykj.net.cn
-http://songzanlinsi.aykj.net.cn
-http://www.aykj.net.cn
-http://wwwaykjnet.aykj.net.cn
+http://cyxy.ynudcc.cn:81
+http://img1.ynudcc.cn:81
+http://kyc.ynudcc.cn:81
+http://ns1.ynudcc.cn:81
+http://weixin.ynudcc.cn:81
+http://www.ynudcc.cn
+http://www.ynudcc.cn:81
+http://xs.ynudcc.cn
+http://xs.ynudcc.cn:81
+http://xsc.ynudcc.cn:81
+https://www.ynudcc.cn

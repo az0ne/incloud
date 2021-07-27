@@ -37,3 +37,4 @@
 .dockercfg,http://hnzf.aykj.net.cn/.dockercfg,,270,200,959,76,1,text/html,
 .dockerignore,http://hnzf.aykj.net.cn/.dockerignore,,271,200,962,76,1,text/html,
 FUZZ,url,redirectlocation,position,status_code,content_length,content_words,content_lines,content_type,resultfile
+FUZZ,url,redirectlocation,position,status_code,content_length,content_words,content_lines,content_type,resultfile
